@@ -1,0 +1,33 @@
+{
+  "name": "the-box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "browser-sync": "^3.0.4",
+    "del": "^8.0.1",
+    "eslint": "^10.9.1",
+    "gulp": "^5.0.1",
+    "gulp-autoprefixer": "^10.0.0",
+    "gulp-eslint-new": "^2.6.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-fonter-fix": "^0.0.1",
+    "gulp-sass": "^6.0.1",
+    "gulp-sharp-responsive": "^0.4.1",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-ttf2woff2": "^5.0.0",
+    "sass": "^1.103.1",
+    "webpack-stream": "^7.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arkadi Sahakyan",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^14.2.0"
+  }
+}
