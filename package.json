@@ -9,6 +9,7 @@
     "browser-sync": "^3.0.4",
     "del": "^8.0.1",
     "eslint": "^10.9.1",
+    "gh-pages": "^6.3.0",
     "gulp": "^5.0.1",
     "gulp-autoprefixer": "^10.0.0",
     "gulp-eslint-new": "^2.6.2",
@@ -22,9 +23,11 @@
     "webpack-stream": "^7.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "gulp build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
+  "homepage": "https://arkadisahakyan.github.io/the-box",
   "author": "Arkadi Sahakyan",
   "license": "ISC",
   "dependencies": {

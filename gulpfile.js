@@ -250,3 +250,10 @@ export const fast = gulp.series(
   gulp.parallel(pages, styles, scripts),
   gulp.parallel(initBrowserSync, watchFiles),
 );
+
+export const build = gulp.series(
+  clean,
+  gulp.parallel(minifyJpeg, minifyPng, handleSvg),
+  gulp.series(convertToTtf, convertTtfToWoff2, copyFonts, fontStyle),
+  gulp.parallel(pages, styles, scripts),
+);
