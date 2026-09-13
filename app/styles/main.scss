@@ -163,6 +163,8 @@ li {
     gap: 1px;
     font-size: 1.125rem;
     background: white;
+    cursor: pointer;
+    user-select: none;
 
     & > * {
       flex-basis: 50%;
