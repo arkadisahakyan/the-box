@@ -1069,6 +1069,10 @@ li {
   gap: 1px;
   font-size: 1.125rem;
   background: white;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .hero__featured-projects-nav > * {
   flex-basis: 50%;
