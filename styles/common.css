@@ -29,3 +29,14 @@
   transform-origin: left;
   transform: translateY(2px) rotate(-45deg);
 }
+
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
