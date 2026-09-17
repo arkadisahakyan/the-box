@@ -1,3 +1,5 @@
+// HAMBURGER MENU TOGGLE BUTTON
+
 .menu-toggle {
   & * {
     display: block;
@@ -40,4 +42,19 @@
       }
     }
   }
+}
+
+// FOR ANIMATION
+
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(50px);
+  transition:
+    opacity 0.2s ease-in,
+    transform 0.2s ease-in;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
