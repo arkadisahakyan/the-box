@@ -43,8 +43,17 @@ li {
   gap: 32px;
 }
 
+#header {
+  z-index: 15;
+  position: sticky;
+  top: 0;
+}
+
 .header {
   height: 80px;
+  align-content: center;
+  background: white;
+  overflow-x: clip;
 
   &__logo {
     grid-column: span 6;
@@ -64,7 +73,7 @@ li {
     font-size: 1.125rem;
     color: var(--text-color-dark-900);
 
-    ul {
+    & ul {
       display: flex;
       align-items: center;
       gap: 50px;
@@ -75,6 +84,50 @@ li {
     font-weight: 600;
     font-size: 1.125rem;
     color: var(--text-color-orange);
+  }
+
+  & .menu-toggle {
+    z-index: 99;
+    align-self: center;
+    justify-self: end;
+    display: none;
+    grid-column: 12 / 13;
+  }
+
+  @media (max-width: 800px) {
+    &.container {
+      gap: 16px;
+    }
+
+    &__nav {
+      flex-direction: column;
+      justify-content: start;
+      overflow-y: auto;
+      position: absolute;
+      grid-column: 1 / span 13;
+      width: min(80vw, 300px);
+      height: 100vh;
+      top: 0;
+      left: 100%;
+      background: white;
+      transition: all 0.2s ease-in-out;
+      padding-block: 80px;
+
+      & ul {
+        margin-block: 30px;
+        width: 100%;
+        flex-direction: column;
+        flex-shrink: 0;
+      }
+
+      .header:has(.menu-toggle input:checked) & {
+        transform: translateX(-100%);
+      }
+    }
+
+    & .menu-toggle {
+      display: block;
+    }
   }
 }
 
@@ -116,7 +169,7 @@ li {
   }
 
   &__background-image {
-    flex: 100% 0 0;
+    flex: 0 0 100%;
     display: block;
     width: 100%;
     height: 100%;
@@ -165,7 +218,6 @@ li {
     gap: 1px;
     font-size: 1.125rem;
     background: white;
-    cursor: pointer;
     user-select: none;
 
     & > * {
@@ -176,6 +228,15 @@ li {
       padding-block: 9.5px;
       gap: 10px;
       background: var(--text-color-dark-800);
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 800px) {
+    & h1 {
+      font-size: 4rem;
+      margin-top: 30px;
+      align-self: flex-start;
     }
   }
 }
@@ -196,7 +257,7 @@ li {
 
   &__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 18px;
   }
