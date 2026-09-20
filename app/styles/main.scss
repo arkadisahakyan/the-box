@@ -9,6 +9,8 @@
   --text-color-dark-800: #292e3d;
   --text-color-dark-700: #3d445c;
   --text-color-dark-400: #858ead;
+  --color-neutral-100: #e0e3eb;
+  --color-neutral-50: #f6f8f7;
   --text-color-orange: #f9995d;
 }
 
@@ -367,6 +369,66 @@ li {
       position: relative;
       grid-column: 2 / 12;
       top: -80px;
+    }
+  }
+}
+
+// SERVICES SECTION
+
+.services {
+  background: var(--color-neutral-50);
+  padding-block: 44px 76px;
+
+  & h2 {
+    margin-bottom: 36px;
+    grid-column: 1 / 13;
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-align: center;
+    color: var(--text-color-dark-800);
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 271px), 271px));
+    grid-column: 2 / 12;
+    row-gap: 48px;
+    justify-content: space-between;
+  }
+
+  &__item {
+    background: white;
+    height: 181px;
+    padding: 38px;
+
+    & * {
+      display: block;
+    }
+
+    & img {
+      margin-inline: auto;
+      margin-bottom: 20px;
+    }
+
+    & hr {
+      width: 40px;
+      margin-inline: auto;
+    }
+
+    & span {
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 1.25rem;
+      text-align: center;
+      color: var(--text-color-dark-blue);
+    }
+  }
+
+  &__item:nth-child(even) {
+    background: var(--text-color-dark-blue);
+
+    & span {
+      color: white;
     }
   }
 }
