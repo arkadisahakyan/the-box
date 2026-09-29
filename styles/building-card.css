@@ -1,0 +1,26 @@
+.building-card {
+  display: flex;
+  flex-direction: column;
+}
+.building-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 384/247;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.building-card div {
+  flex-grow: 1;
+  padding: 0.75rem 0.75rem 1rem;
+  background: var(--text-color-dark-blue);
+  color: white;
+}
+.building-card div h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+.building-card div span {
+  font-size: 1.125rem;
+}
