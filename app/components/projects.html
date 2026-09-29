@@ -1,0 +1,92 @@
+<section id="projects">
+  <div class="wrapper">
+    <div class="container projects">
+      <h2>Projects</h2>
+      <fieldset class="projects__grouping">
+        <div>
+          <input
+            name="projects__grouping"
+            type="radio"
+            checked
+            id="projects__all"
+          />
+          <label for="projects__all">All</label>
+        </div>
+        <div>
+          <input
+            name="projects__grouping"
+            type="radio"
+            id="projects__commercial"
+          />
+          <label for="projects__commercial">Commercial</label>
+        </div>
+        <div>
+          <input
+            name="projects__grouping"
+            type="radio"
+            id="projects__residential"
+          />
+          <label for="projects__residential">Residential</label>
+        </div>
+        <div>
+          <input name="projects__grouping" type="radio" id="projects__other" />
+          <label for="projects__other">Other</label>
+        </div>
+      </fieldset>
+      <div class="projects__list-slider fade-in-element">
+        <div class="swiper projects__list">
+          <div class="swiper-wrapper projects__list-wrapper">
+            <!-- prettier-ignore -->
+            @@include("building-card.html", { "src": "images/building-1.jpg",
+          "title": "Wildstone Infra Hotel", "description": "2715 Ash Dr. San Jose, South Dakota" })
+          @@include("building-card.html", { "src": "images/building-2.jpg",
+          "title": "Wish Stone Building", "description": "2972 Westheimer Rd. Santa Ana, Illinois" })
+          @@include("building-card.html", { "src": "images/building-3.jpg",
+          "title": "Mr. Parkinston's House", "description": "3517 W. Gray St. Utica, Pennsylvania" })
+          @@include("building-card.html", { "src": "images/building-4.jpg",
+          "title": "Oregano Height", "description": "2464 Royal Ln. Mesa, New Jersey" })
+
+
+          @@include("building-card.html", { "src": "images/building-1.jpg",
+          "title": "Wildstone Infra Hotel", "description": "2715 Ash Dr. San Jose, South Dakota" })
+          @@include("building-card.html", { "src": "images/building-2.jpg",
+          "title": "Wish Stone Building", "description": "2972 Westheimer Rd. Santa Ana, Illinois" })
+          @@include("building-card.html", { "src": "images/building-3.jpg",
+          "title": "Mr. Parkinston's House", "description": "3517 W. Gray St. Utica, Pennsylvania" })
+          @@include("building-card.html", { "src": "images/building-4.jpg",
+          "title": "Oregano Height", "description": "2464 Royal Ln. Mesa, New Jersey" })
+
+
+          @@include("building-card.html", { "src": "images/building-1.jpg",
+          "title": "Wildstone Infra Hotel", "description": "2715 Ash Dr. San Jose, South Dakota" })
+          @@include("building-card.html", { "src": "images/building-2.jpg",
+          "title": "Wish Stone Building", "description": "2972 Westheimer Rd. Santa Ana, Illinois" })
+          @@include("building-card.html", { "src": "images/building-3.jpg",
+          "title": "Mr. Parkinston's House", "description": "3517 W. Gray St. Utica, Pennsylvania" })
+          @@include("building-card.html", { "src": "images/building-4.jpg",
+          "title": "Oregano Height", "description": "2464 Royal Ln. Mesa, New Jersey" })
+
+
+          @@include("building-card.html", { "src": "images/building-1.jpg",
+          "title": "Wildstone Infra Hotel", "description": "2715 Ash Dr. San Jose, South Dakota" })
+          @@include("building-card.html", { "src": "images/building-2.jpg",
+          "title": "Wish Stone Building", "description": "2972 Westheimer Rd. Santa Ana, Illinois" })
+          @@include("building-card.html", { "src": "images/building-3.jpg",
+          "title": "Mr. Parkinston's House", "description": "3517 W. Gray St. Utica, Pennsylvania" })
+          @@include("building-card.html", { "src": "images/building-4.jpg",
+          "title": "Oregano Height", "description": "2464 Royal Ln. Mesa, New Jersey" })
+          </div>
+        </div>
+        <div class="projects__list-navigation">
+          <div class="projects__list-button-prev">
+            @@include("../images/icons/arrow-left.svg") Back
+          </div>
+          <div class="projects__list-pagination swiper-pagination"></div>
+          <div class="projects__list-button-next">
+            Next @@include("../images/icons/arrow-right.svg")
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
