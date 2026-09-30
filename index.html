@@ -19,10 +19,10 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#about-us">About Us</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#services">Services</a></li>
           <li class="header__nav-item--highlighted">
-            <a href="#">Contact Us</a>
+            <a href="#contact-us">Contact Us</a>
           </li>
         </ul>
       </nav>
@@ -220,7 +220,7 @@
           Our company has been the leading provided construction services to
           clients throughout the USA since 1988.
         </p>
-        <a href="#">Contact Us</a>
+        <a href="#contact-us">Contact Us</a>
       </div>
     </div>
   </div>
@@ -233,7 +233,7 @@
         <p>Just one call away: <u>+84 1102 2703</u></p>
       </div>
       <div class="free-consultation__call-for-action fade-in-element">
-        <a href="#">Get your consultation</a>
+        <a href="#contact-us">Get your consultation</a>
       </div>
     </div>
   </div>
@@ -430,6 +430,64 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+ <section id="contact-us">
+  <div class="wrapper">
+    <div class="container contact-us">
+      <h2>What can us do for you?</h2>
+      <p class="contact-us__subtext">
+        We are ready to work on a project of any complexity, whether it's
+        commercial or residential.
+      </p>
+      <form action="">
+        <div>
+          <div>
+            <input id="contact-name" type="text" placeholder="" />
+            <label for="contact-name"
+              >Your Name<span style="color: #c40303">*</span></label
+            >
+          </div>
+          <div>
+            <input id="contact-email" type="email" placeholder="" />
+            <label for="contact-email"
+              >Email<span style="color: #c40303">*</span></label
+            >
+          </div>
+          <div>
+            <input
+              id="contact-reason"
+              type="text"
+              placeholder=""
+              list="contact-us__reasons"
+            />
+            <label for="contact-reason"
+              >Reason for Contacting<span style="color: #c40303">*</span></label
+            >
+            <datalist id="contact-us__reasons">
+              <option value="reason-one">Reason 1</option>
+              <option value="reason-two">Reason 2</option>
+            </datalist>
+          </div>
+          <div>
+            <input id="contact-phone" type="tel" placeholder="" />
+            <label for="contact-phone">Phone</label>
+          </div>
+          <div>
+            <textarea
+              id="contact-message"
+              name="message"
+              placeholder=""
+            ></textarea>
+            <label for="contact-message">Message</label>
+          </div>
+        </div>
+        <p class="contact-us__required-warning">
+          <span style="color: #c40303">*</span> indicates a required field
+        </p>
+        <button class="fade-in-element" type="submit">Submit</button>
+      </form>
     </div>
   </div>
 </section>
